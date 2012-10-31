@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Ruler.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    Ruler *ruler = [[Ruler alloc] initWithFrame:CGRectMake(0, 100, 320, 200)];
+    [self.view addSubview:ruler];
 }
 
 - (void)didReceiveMemoryWarning
